@@ -1,0 +1,143 @@
+/*General*/
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+/*Encabezado*/
+.header{
+    background-color: rgba(43, 35, 48, 0.4);
+    padding: 0.5rem 0;
+}
+
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header a:hover{
+    color: #7d6c73;
+}
+
+/*Barra de navegación*/
+.navbar-nav .nav-link.active{
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #55444b; 
+}
+
+.dropdown .dropdown-menu{
+    background-color: rgba(85, 68, 75);
+}
+
+/*Texto imagen principal*/
+.front-page-text {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw; 
+    line-height: 120%;
+    color: #ffffff;
+    z-index: 1; 
+    white-space: nowrap; 
+    max-width: 100%; 
+    overflow: hidden;
+}
+
+/*Iconos side bar*/
+.icon{
+    font-size: 45px;
+}
+
+/*Titulos de las paginas*/
+.titulo{
+    border-bottom: 4px solid #55444b;
+}
+
+/*h4 seccion destacados*/
+.bg-color{
+    background-color: #294840;
+}
+
+/*Formulario de contacto*/
+.btn-send{
+    background-color: #55444b;
+}
+.btn-send:hover{
+    background-color: #7d6c73;
+}
+
+/*Iconos formulario de contacto*/
+.icon-formulario{
+    font-size: 35px;
+}
+.href-form a{
+    color: #000000;
+}
+.href-form a:hover{
+    color: #55444b;
+}
+
+/*Icono card senderos*/
+.icon-path{
+    font-size: 20px;
+}
+
+.icon-text{
+    line-height: 9px;
+}
+
+/*Info especifica card senderos*/
+.section-data{
+    background-color: #bea2ae;
+    color: #ffffff;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+/*Hipervinculos senderos cercanos*/
+.btn-senderos{
+    border: 2px solid #55444b;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-senderos:hover{
+    color: #ffffff;
+    background-color: #7d6c73;
+}
+
+/*Footer*/
+.footer{
+    background-color: #7d6c73;
+}
+
+/*Media query para dispositivos pequeños*/
+@media (max-width: 768px){
+    .info-contacto {
+        padding-top: 2rem; 
+    }
+    .front-page-text {
+        font-size: 10vw; 
+    }
+}
+
+/*Media query para dispositivos medianos*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .info-contacto {
+        padding-top: 2rem; 
+    }
+}
+
+
+
+
+
+
+
