@@ -1,0 +1,113 @@
+/*General*/
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+    background-color: #eff3f6;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Encabezado*/
+.header{
+    background-color: #303236;
+}
+
+/*Barra de navegacion*/
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.navbar-brand-box{
+    padding: 0 1.5rem;
+    text-align: center;
+    width: 240px;
+}
+
+.icon{
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn-header{
+    color: #fff;
+}
+
+/*Sidebar*/
+.sidebar{
+    width: 240px;
+    background-color: #fff;
+    bottom: 0;
+    position: fixed;
+    top: 70px;
+    padding: 10px 0 30px 0;
+    border-right: 1px solid #e6ecf5;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.sidebar .menu-title{
+    padding-left: 12px;
+    padding-top: 5px;
+    letter-spacing: .05em;
+    font-size: 12px;
+    color: #505d69;
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: .625rem 1.5rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.sidebar ul li a i{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+/*Main content*/
+.main-content{
+    margin-left: 240px;
+    overflow: hidden;
+}
+
+.page-content{
+    padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+}
+
+.page-title-box{
+    padding-bottom: 24px;
+}
+
+.page-title-box h2{
+    font-size: 25px;
+    letter-spacing: .05em;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    font-size: 15px;
+}
+
+td{
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dao a{
+    font-size: 25px;
+    color: #000;
+}

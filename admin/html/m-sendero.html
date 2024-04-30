@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel administrativo</title>
+    <!--Bootstrap-->
+    <link href="../assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Archivo css-->
+    <link rel="stylesheet" href="../style.css">
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Encabezado y barra de navegación-->
+  <header class="header fixed-top">
+    <nav class="navbar d-flex">
+      <div class="d-flex">
+        <div class="navbar-brand-box">
+          <a href="#"><img style="width: 100px;" src="../assets/img/logo.png" alt="logo"></a>
+        </div>
+        <button class="btn btn-sm px-3"><i class="bi bi-list icon"></i></button>               
+      </div>
+      <div class="d-flex">
+        <div class="dropdown d-inline-block pe-2">
+          <button class="btn btn-sm"><i class="bi bi-bell icon"></i></button>
+        </div>
+        <div class="dropdown pe-5">      
+          <button class="btn dropdown-toggle btn-header" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="rounded-circle" src="../assets/img/icon-user.png" alt="user-img" style="width: 25px;">
+            <span class="ps-1 user-name">Usuario</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person-vcard pe-2"></i>Perfil</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear pe-2"></i>Configuración</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="#" style="color: rgb(218, 19, 19);"><i class="bi bi-power pe-2"></i>Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Contenido de la página-->
+  <main>
+    <!--Sidebar-->
+    <div class="sidebar shadow">
+      <ul>
+        <li class="menu-title text-uppercase fw-bold">Menu</li>
+        <li>
+          <a href="../index.html">
+            <i class="bi bi-columns-gap"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="menu-title text-uppercase fw-bold">Mantenedores</li>
+        <li>
+          <a href="">
+            <i class="bi bi-people"></i>
+            <span>Usuarios</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bi bi-signpost-2"></i>
+            <span>Senderos</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bi bi-luggage"></i>
+            <span>Alojamientos</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bi bi-shop"></i>
+            <span>Restaurantes</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bi bi-stars"></i>
+            <span>Destacados</span>
+          </a>
+        </li>
+        <li class="menu-title text-uppercase fw-bold">Páginas</li>
+        <li>
+          <a href="">
+            <i class="bi bi-columns-gap"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Contenido principal de la página-->
+    <div class="main-content">
+      <div class="page-content">
+        <div class="container">
+          <!--Titulo, add y remove-->
+          <div class="row">
+            <div class="col-12">
+              <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                <h2 class="mb-sm-0 text-uppercase fw-semibold">Senderos</h2>
+
+                <div class="dao pe-4">
+                  <a href=""><i class="bi bi-plus-circle pe-2"></i></a>
+                  <a href=""><i class="bi bi-x-circle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Tabla de contenido-->
+          <div class="row">
+            <div class="col-12">
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="table">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Descripción</th>
+                          <th scope="col">Dificultad</th>
+                          <th scope="col">Duración</th>
+                          <th scope="col">Distancia</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Circuito W</td>
+                          <td>Un trekking icónico que te guía por los paisajes más impresionantes de Torres del Paine, desde las famosas Torres hasta el glaciar Grey, ofreciendo vistas panorámicas inigualables en la Patagonia chilena.</td>
+                          <td>Alta</td>
+                          <td>5 Días</td>
+                          <td>70 a 80 km</td>
+                          <td><a href="" class="btn"><i class="bi bi-pencil-square"></i></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Circuito O</td>
+                          <td>Sumergete en la inmensidad y la belleza salvaje del Circuito O. Camina entre valles escarpados, atravesando ríos cristalinos y bosques antiguos, mientras te maravillas con la magnificencia natural de la Patagonia chilena.</td>
+                          <td>Alta</td>
+                          <td>8 Días</td>
+                          <td>115 a 130 km</td>
+                          <td><a href="" class="btn"><i class="bi bi-pencil-square"></i></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Valle del Francés</td>
+                          <td>El sendero del Valle del Francés generalmente se hace como parte del circuito W o del circuito O en el parque. Ofrece a los excursionistas una experiencia única al caminar entre glaciares, lagos turquesas y bosques de lenga.</td>
+                          <td>Media</td>
+                          <td>8 horas</td>
+                          <td>18 km</td>
+                          <td><a href="" class="btn"><i class="bi bi-pencil-square"></i></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Glaciar Grey</td>
+                          <td>Sorprendete con los bosques magallanicos, fauna silvestre y el inigualable Lago Grey. Este sendero te deslumbrara con su punto culminiante, el Glaciar Grey, maravillate con sus tonos azules y blancos que contrastan con el paisaje.</td>
+                          <td>Media</td>
+                          <td>10 horas</td>
+                          <td>22 a 24 km</td>
+                          <td><a href="" class="btn"><i class="bi bi-pencil-square"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </main>
+
+
+  <!--Script Bootstrap-->
+  <script src="../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
